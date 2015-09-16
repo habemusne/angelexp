@@ -18,4 +18,6 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^triplet/', include('triplet.urls', namespace="triplet")),
+    url(r'^main/', include('main.urls', namespace="main")),
 ]

@@ -1,0 +1,90 @@
+
+body{
+	text-align: center;
+	font-size: 18px !important;
+}
+label {
+	padding-left: 10px;
+}
+.emp{
+	color: #3f6479;
+	font-weight: bold;
+}
+.well > p{
+	text-align: left;
+}
+.left{
+	margin-right:20%;
+}
+.img-left{
+	margin-right:13%;
+	margin-left:2%;
+}
+.right{
+	margin-left:20%;
+}
+.img-right{
+	margin-left:17%;
+}
+.radio_scale{
+	padding-left: 15px;
+	padding-right: 15px;
+	width:80%;
+}
+#scalelabels{
+	float:left;
+	display:inline;
+	position:relative;
+	width:10.4%;
+}
+#likert_scale {
+	display: block;
+	margin-top: 10%;
+	margin-left: 11%;
+	width: 640px;
+	border: 0px;
+}
+
+#scale_value {
+	margin-left: 12px;
+	margin-right: 12px;
+}
+
+.sim{
+	margin-top:5%;
+}
+
+
+
+/* not useful*/
+.text-warning{
+	color: #E74C3C;
+}
+
+.qstn-select{
+	width: 250px;
+	border: 0;
+	height:40px;
+	background-color:none;
+}
+#sliderlabels{
+	float:left;
+	display:inline;
+	position:relative;
+	width:10.3%;
+}
+#sliderlabelName2 {
+	float:left;
+	display:inline;
+	position:relative;
+	width:20%;
+	margin-left: 25%;
+}
+#sliderlabelName1 {
+	float:left;
+	display:inline;
+	position:relative;
+	width:20%;
+	margin-right: 35%;
+}
+

@@ -1,18 +1,11 @@
 from django.contrib import admin
 
-from .models import Question, Answer
+from .models import Image, Question, Answer
 
+@admin.register(Image)
+class ImageAdmin(admin.ModelAdmin):
+    pass
 
-class AnswerInline(admin.TabularInline):
-    model = Answer
-    extra = 2
-
+@admin.register(Question)
 class QuestionAdmin(admin.ModelAdmin):
-    fieldsets = [
-        ('img1',               {'fields': ['img1']}),
-        ('img2',               {'fields': ['img2']}),
-        ('img3',               {'fields': ['img3']}),
-    ]
-    inlines = [AnswerInline]
-
-admin.site.register(Question, QuestionAdmin)
+    pass

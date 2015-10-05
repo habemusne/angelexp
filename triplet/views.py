@@ -9,6 +9,16 @@ import ujson
 def exp(request):
     return render(request, 'triplet/exp.html')
 
+def first_trial(request):
+    next_question = Question.objects.first()
+    response_text = ujson.dumps({
+        'question_id': next_question.pk,
+        'img1': next_question.img1,
+        'img2': next_question.img2,
+        'img3': next_question.img3,
+    })
+    return HttpResponse(response_text)
+
 def next_trial(request, question_id):
     img1_id = request.POST['img1_id']
     img2_id = request.POST['img2_id']
@@ -21,6 +31,7 @@ def next_trial(request, question_id):
             img2=stimulus['img2'],
             img3=stimulus['img3'],
         )
+
     except Question.DoesNotExist:
         next_question = Question.objects.create(
             img1=stimulus['img1'],
